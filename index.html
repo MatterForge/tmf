@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="home-page">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/small_logo.png" alt="Matter Forge Logo">
+                </a>
+            </div>
+            <div class="nav-links-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#link-tree">Links</a></li>
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#project-gallery">Projects</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="hero">
+            <h1>Welcome to the Forge.</h1>
+            <p class="subtitle">Creativity Breeds Progression</p>
+            <div class="cta-buttons">
+                <a href="#project-gallery" class="cta-button">View Project Catalog</a>
+            </div>
+        </section>
+
+        <section id="link-tree">
+            <div class="container">
+                <h2 class="link-tree-title">Explore Our Resources</h2>
+                <p class="link-tree-subtitle">Quick links to our most popular tools and guides.</p>
+                <div class="link-grid">
+                    <a href="https://thangs.com/thematterforge" class="link-bar">
+                        <h3>3D Model Downloads</h3>
+                        <p>Thangs</p>
+                    </a>
+                    <a href="https://www.etsy.com/shop/TheMatterForge" class="link-bar">
+                        <h3>3D Printing Shop</h3>
+                        <p>Etsy</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/14Vxc0uYcyfyrnR5IfgSEv1DIVSVhwxZm/view?usp=sharing" class="link-bar">
+                        <h3>Free Slicing Guide</h3>
+                        <p>Cura</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro">
+            <h1 class="section-title">Building Digital Solutions</h1>
+                <p>
+                    Our goal is to empower creators to turn ideas into reality through 3D design. 
+                    We make high-quality assets accessible while giving people the tools and knowledge to create their own.
+                </p>
+                <p>
+                    Our vision is to build a community where anyone from hobbyists to professionals can learn, create, and thrive. 
+                    We're not just selling models; we're helping shape the next generation of 3D creators.
+                </p>
+            <div>
+                <h2>What We Do</h2>
+                    <p>
+                        We offer a blend of digital products and hands-on learning to support you at every stage:
+                    </p>
+                <ul>
+                    <li><strong>Custom &amp; Pre-Made 3D Models:</strong> High-quality assets ready for games, printing, animation, and more</li>
+                    <li><strong>3D Design Tutorials &amp; Courses:</strong> Step-by-step guidance for beginners and advancing creators</li>
+                    <li><strong>Creative Resources:</strong> Tools, tips, and workflows to improve your design process</li>
+                    <li><strong>Community &amp; Support:</strong> Learn, connect, and grow alongside other creators</li>
+                </ul>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta">
+            <h3>Ready to bring your ideas to life?</h3>
+            <p>
+                Explore our 3D models or start learning today—your next creation starts here.
+            </p>
+                <a href="#project-gallery" class="cta-button">Get Started</a>
+            </div>
+        </section>
+
+        <section id="project-gallery">
+            <h1 class="section-title">Featured 3D Projects</h1>
+            <p class="link-tree-subtitle" style="text-align: center; margin-bottom: 50px;">A showcase of models and assets built with precision and creativity.</p>
+
+            <div class="project-grid">
+                
+                <!-- Project Card 1 -->
+                <a href="#" class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/MF.png">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Placeholder</h3>
+                        <p class="project-subtitle">Placeholder</p>
+                        <span class="cta-button">View Details</span>
+                    </div>
+                </a>
+
+                <!-- Project Card 2 -->
+                <a href="#" class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/MF.png">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Placeholder</h3>
+                        <p class="project-subtitle">Placeholder</p>
+                        <span class="cta-button">View Details</span>
+                    </div>
+                </a>
+
+                <!-- Project Card 3 -->
+                <a href="#" class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/MF.png">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Placeholder</h3>
+                        <p class="project-subtitle">Placeholder</p>
+                        <span class="cta-button">View Details</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 My Name. All rights reserved.</p>
+        <a href="#" class="github-link" aria-label="GitHub Profile">
+            <!-- Placeholder for GitHub Icon -->
+            <img src="images/MF.png" alt="GitHub Icon" style="width: 24px; height: 24px;">
+        </a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
