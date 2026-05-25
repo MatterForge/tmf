@@ -1,16 +1,5 @@
-Serve to localhost:8080
+The Matter Forge Website. 
 
-python3 -m http.server 8080
+Written in HTML/CSS/JS.
 
-
-Kill the process
-
-Find the Process ID (PID) using the port:bash
-lsof -i :8000
-
-kill -9 (PID)
-
-
-Start Aider
-
-aider --model ollama_chat/gemma4:latest
+Created May 2026. 
