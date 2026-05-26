@@ -64,6 +64,7 @@ header {
     display: block;
 }
 .logo img {
+    padding-top: 5px;
     height: 40px; /* Set a fixed height for the logo */
     width: auto;
 }
@@ -418,11 +419,10 @@ nav a:hover {
     #project-gallery {
         padding: 20px 20px; /* Increased vertical padding slightly for separation */
     }
-
 }
 
 /* Mobile View (Max 600px) */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     /* General Padding */
     .container {
         width: 95%;
@@ -439,6 +439,10 @@ nav a:hover {
     /* Show hamburger and hide menu by default */
     .hamburger {
         display: block;
+    }
+
+    .logo img {
+        content: url("images/small_logo.png");
     }
 
     .nav-menu {
