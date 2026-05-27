@@ -193,11 +193,14 @@ nav a:hover {
     border: 1px solid var(--accent-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Added shadow for separation */
     border-radius: 30px;
-    padding: 6px; /* Increased padding slightly */
+    padding: 15px; /* Increased padding to accommodate logo */
     margin-bottom: 20px;
     text-decoration: none;
     color: var(--text-color);
-    display: block;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+    justify-content: space-between; /* Pushes content to opposite ends */
+    gap: 0; /* Removed explicit gap */
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     cursor: pointer; /* Indicate it's clickable */
 }
@@ -207,24 +210,47 @@ nav a:hover {
     box-shadow: 0 0px 20px rgba(235, 72, 60, 0.3); /* Softer, more encompassing shadow */
     border-color: var(--accent-color); /* Highlight border on hover */
 }
+
+/* Logo Styling */
+.link-logo-wrapper {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text Content Styling within link-bar */
+.link-bar > div {
+    flex-grow: 1; /* Allows the text container to take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link-logo {
+    width: 40px; /* Fixed width for logo */
+    height: 40px; /* Fixed height for logo */
+    object-fit: contain; /* Ensure logo scales correctly */
+}
+
 .link-bar h3 {
     text-transform: uppercase;
-    margin-top: 0;
+    margin: 0; /* Reset margin */
     font-size: 1.4em;
-    color: var(--text-color); /* Keep title text color consistent, but let the hover shadow/border define the accent */
-    margin-bottom: 8px;
+    color: var(--text-color);
+    margin-bottom: 5px;
 }
 .link-bar p {
     text-transform: uppercase;
     font-size: 1em;
     color: #aaa;
-    margin-bottom: 0px;
+    margin: 0; /* Reset margin */
 }
 .link-bar a {
-    color: var(--accent-color);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
+    color: var(--text-color);
 }
 
 /* --- Intro Section Specific Styling --- */
