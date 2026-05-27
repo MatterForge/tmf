@@ -172,17 +172,20 @@ nav a:hover {
     text-align: center;
 }
 #link-tree p {
-    font-size: 1.0em;
+    font-size: 1.15em;
     color: #aaa;
     text-align: center;
+    margin-top: 0px;
 }
 .link-grid {
-    display: flex;
+    width: 520px;
+    display: block;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-    max-width: 900px;
     margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 .link-bar {
     flex: 1 1 250px; /* Allows bars to grow/shrink but maintain a minimum width */
@@ -190,14 +193,15 @@ nav a:hover {
     border: 1px solid var(--accent-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Added shadow for separation */
     border-radius: 30px;
-    padding: 20px; /* Increased padding slightly */
+    padding: 6px; /* Increased padding slightly */
+    margin-bottom: 20px;
     text-decoration: none;
     color: var(--text-color);
     display: block;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    text-align: left;
     cursor: pointer; /* Indicate it's clickable */
 }
+
 .link-bar:hover {
     transform: translateY(-2px); /* Increased lift effect */
     box-shadow: 0 0px 20px rgba(235, 72, 60, 0.3); /* Softer, more encompassing shadow */
@@ -418,6 +422,10 @@ nav a:hover {
 
     #project-gallery {
         padding: 20px 20px; /* Increased vertical padding slightly for separation */
+    }
+
+    .link-grid {
+        max-width: 100%;
     }
 }
 
