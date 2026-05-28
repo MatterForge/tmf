@@ -471,6 +471,15 @@ nav a:hover {
     .link-grid {
         max-width: 100%;
     }
+    .link-tree-title {
+        font-size: 1.7em;
+    }
+    .intro-title {
+        font-size: 1.7em;
+    }
+    .project-gallery-title {
+        font-size: 1.7em;
+    }
 }
 
 /* Mobile View (Max 600px) */
