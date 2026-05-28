@@ -191,9 +191,15 @@ nav a:hover {
 /* Social Links Styling */
 .social-links {
     margin-top: 40px;
+    margin-bottom: 20px;
     max-width: 520px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.divider {
+  border-top: 1px solid #8a8a8a;
+  margin-top: 50px;
 }
 
 .link-bar {
