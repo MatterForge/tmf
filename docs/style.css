@@ -197,6 +197,12 @@ nav a:hover {
     justify-content: space-evenly;
 }
 
+.social-logo {
+    width: 55px; /* Fixed width for logo */
+    height: 55px; /* Fixed height for logo */
+    object-fit: contain; /* Ensure logo scales correctly */
+}
+
 .divider {
   border-top: 1px solid #8a8a8a;
   margin-top: 50px;
