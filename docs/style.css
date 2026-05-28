@@ -187,27 +187,6 @@ nav a:hover {
     align-content: center;
     text-align: center;
 }
-
-/* Social Links Styling */
-.social-links {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    max-width: 520px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.social-logo {
-    width: 55px; /* Fixed width for logo */
-    height: 55px; /* Fixed height for logo */
-    object-fit: contain; /* Ensure logo scales correctly */
-}
-
-.divider {
-  border-top: 1px solid #8a8a8a;
-  margin-top: 50px;
-}
-
 .link-bar {
     flex: 1 1 250px; /* Allows bars to grow/shrink but maintain a minimum width */
     background-color: #111111; /* Using a dark background similar to header/hero for containment */
@@ -272,6 +251,24 @@ nav a:hover {
     align-items: center;
     text-decoration: none;
     color: var(--text-color);
+}
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    max-width: 520px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-logo {
+    width: 55px; /* Fixed width for logo */
+    height: 55px; /* Fixed height for logo */
+    object-fit: contain; /* Ensure logo scales correctly */
+}
+.divider {
+  border-top: 1px solid var(--accent-color);
+  margin-top: 50px;
 }
 
 /* --- Intro Section Specific Styling --- */
