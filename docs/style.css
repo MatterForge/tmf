@@ -187,6 +187,15 @@ nav a:hover {
     align-content: center;
     text-align: center;
 }
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 40px;
+    max-width: 520px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .link-bar {
     flex: 1 1 250px; /* Allows bars to grow/shrink but maintain a minimum width */
     background-color: #111111; /* Using a dark background similar to header/hero for containment */
