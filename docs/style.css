@@ -193,7 +193,7 @@ nav a:hover {
     margin-top: 40px;
     max-width: 520px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .link-bar {
