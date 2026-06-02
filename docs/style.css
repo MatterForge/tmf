@@ -481,6 +481,12 @@ nav a:hover {
     .link-grid {
         max-width: 100%;
     }
+    .link-bar h3 {
+        font-size: 1.1em;
+    }
+    #link-tree p {
+        font-size: 0.9em;
+    }
     .link-tree-title {
         font-size: 1.6em;
     }
